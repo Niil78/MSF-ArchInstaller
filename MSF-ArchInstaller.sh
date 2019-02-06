@@ -82,6 +82,7 @@ sudo -s
 
 chown -R postgres:postgres /var/lib/postgres/ 2>> ~/LOGFILE.txt
 
+useradd postgres
 su postgres
 
 initdb --locale en_US.UTF-8 -D '/var/lib/postgres/data' 2>> 
